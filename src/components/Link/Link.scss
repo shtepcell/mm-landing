@@ -1,0 +1,17 @@
+.Link {
+    display: inline-block;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+    &_view_default {
+        color: #383838;
+
+        &:hover {
+            color: #1b6fb7;
+            text-decoration: underline;
+        }
+    }
+
+}

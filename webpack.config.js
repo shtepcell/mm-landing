@@ -3,10 +3,18 @@ const path = require('path');
 module.exports = {
     entry: "./src/App.jsx",
 
+    bail: true,
+
     output: {
         path: path.resolve(__dirname, './dist'),
         publicPath: '/dist/',
+        libraryExport: "default",
         filename: "bundle.js"
+    },
+
+    resolve: {
+        modules: ['node_modules'],
+        extensions: ['.js', '.jsx', '.json']
     },
 
     module: {
@@ -18,7 +26,11 @@ module.exports = {
                 options: {
                     presets: ["@babel/preset-env", "@babel/preset-react"]
                 }
-            }
+            },
+            {
+                test: /\.s[ac]ss$/i,
+                use: ['style-loader', 'css-loader', 'sass-loader' ]
+              },
         ]
     },
 }
