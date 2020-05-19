@@ -1,0 +1,17 @@
+.Footer {
+    height: 120px;
+
+    padding: 24px;
+
+    background-color: #eeeff3;
+    border-radius: 5px 5px 0 0;
+
+    &-LinkList {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &-Link {
+        margin: 6px 0;
+    }
+}
