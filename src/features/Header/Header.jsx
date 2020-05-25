@@ -9,6 +9,9 @@ const cnHeader = cn('Header');
 
 export const Header = React.memo(() => (
     <header className={cnHeader()}>
-        <Icon className={cnHeader('Logo')} type="logo" />
+        <nav className={cnHeader('Tab')}>
+            <Icon className={cnHeader('Logo')} type="logo" />
+        </nav>
+        <div className={cnHeader('Promo')} />
     </header>
 ));
