@@ -10,9 +10,16 @@ const cnFooter = cn('Footer');
 export const Footer = React.memo(() => (
     <footer className={cnFooter()}>
         <div className={cnFooter('LinkList')}>
-            <Link className={cnFooter('Link')} view="default">Частным лицам</Link>
-            <Link className={cnFooter('Link')} view="default">Физическим лицам</Link>
-            <Link className={cnFooter('Link')} view="default">Другим лицам</Link>
+            <Link className={cnFooter('Link', { main: true })} view="default">О компании</Link>
+            <Link className={cnFooter('Link')} view="default">О нас</Link>
+            <Link className={cnFooter('Link')} view="default">Документы</Link>
+        </div>
+        <div className={cnFooter('LinkList')}>
+            <Link className={cnFooter('Link', { main: true })} view="default">Услуги</Link>
+            <Link className={cnFooter('Link')} view="default">Интернет</Link>
+            <Link className={cnFooter('Link')} view="default">IPTV</Link>
+            <Link className={cnFooter('Link')} view="default">Дополнительные услуги</Link>
+            <Link className={cnFooter('Link')} view="default">Оборудование</Link>
         </div>
     </footer>
 ));

@@ -25,7 +25,7 @@
         "arrow-parens": "off",
         "react/jsx-props-no-spreading": "off",
         "object-curly-newline": "off",
-        "jsx-a11y/anchor-is-valid": "warn"
+        "jsx-a11y/anchor-is-valid": "off"
     },
     "env": {
         "browser": true
