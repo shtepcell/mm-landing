@@ -29,8 +29,28 @@ module.exports = {
             },
             {
                 test: /\.s[ac]ss$/i,
-                use: ['style-loader', 'css-loader', 'sass-loader' ]
-              },
+                use: [
+                    'style-loader',
+                    {
+                        loader: 'css-loader',
+                        options: {
+                            url: true
+                        }
+                    },
+                    'sass-loader'
+                ]
+            },
+            {
+                test: /\.(png|jpe?g|svg)$/i,
+                use: [
+                    {
+                        loader: 'file-loader',
+                        query: {
+                            name: 'static/media/[name].[hash:8].[ext]'
+                        }
+                    },
+                ],
+            },
         ]
     },
 }
