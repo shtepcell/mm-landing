@@ -1,4 +1,6 @@
 .Footer {
+    display: flex;
+
     max-width: 1360px;
     margin: 0 auto;
 
@@ -14,6 +16,7 @@
     flex-direction: row;
 
     &-LinkList {
+        flex: 1 1 auto;
         &:not(:last-child) {
             margin-right: 40px;
         }
@@ -28,6 +31,40 @@
             font-weight: 700;
 
             margin-bottom: 20px;
+        }
+    }
+
+   &-CompanyLogo {
+        width: 230px;
+        height: 85px;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-image: url('assets/logo.png');
+        margin-bottom: 8px;
+   }
+
+   &-Copyryting {
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: column;
+        width: 230px;
+        font-size: 12px;
+        align-items: center;
+   }
+}
+
+@media screen and (max-width: 750px) {
+    .Footer {
+        flex-wrap: wrap;
+
+        &-LinkList {
+            margin-bottom: 24px;
+        }
+
+        &-Copyryting {
+            margin-top: 32px;
+            flex: 1 1;
         }
     }
 }

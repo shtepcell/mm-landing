@@ -21,5 +21,9 @@ export const Footer = React.memo(() => (
             <Link className={cnFooter('Link')} view="default">Дополнительные услуги</Link>
             <Link className={cnFooter('Link')} view="default">Оборудование</Link>
         </div>
+        <div className={cnFooter('Copyryting')}>
+            <div className={cnFooter('CompanyLogo')} />
+            © ООО «Мой домашний интернет», 2020
+        </div>
     </footer>
 ));
