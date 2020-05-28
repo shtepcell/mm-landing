@@ -1,6 +1,7 @@
 .Header {
-
     &-Tab {
+        display: flex;
+
         position: fixed;
         max-width: 1360px;
         width: 100%;
@@ -9,7 +10,7 @@
         top: 0;
         height: 80px;
 
-        padding: 0 12px;
+        padding: 0 32px;
 
         box-sizing: border-box;
 
@@ -30,6 +31,38 @@
         background-image: url('assets/promo.jpg');
         background-size: cover;
         background-position: 50%;
+    }
+
+    &-Logo {
+        flex: 0 0 auto;
+
+        height: 80px;
+        width: 105px;
+
+        margin-right: 32px;
+    }
+
+    &-Link {
+        text-transform: uppercase;
+        height: 80px;
+
+        line-height: 80px;
+        font-weight: bold;
+    }
+
+    &-Link:hover {
+        color: #1a7abe;
+    }
+
+    &-Link:not(:last-child) {
+        margin-right: 36px;
+    }
+
+    &-Nav {
+        // min-width: 745px;
+        white-space: nowrap;
+
+        overflow: auto;
     }
 }
 
@@ -52,16 +85,45 @@
 }
 
 @media screen and (max-width: 900px) {
+    .Header-Logo {
+        display: none;
+    }
+
+    .Header-Tab {
+        justify-content: center;
+        padding-right: 0;
+    }
+
+    .Header-Link:last-child {
+        margin-right: 24px;
+    }
+}
+
+@media screen and (max-width: 900px) {
     .Header-Promo {
         height: 250px;
     }
 }
 
 @media screen and (max-width: 750px) {
+    .Header-Logo {
+        display: inline-block;
+        height: 56px;
+        width: 80px;
+        margin-right: 12px;
+    }
+
     .Header-Tab {
         transform: unset;
         position: static;
         height: 56px;
+
+        padding-left: 12px;
+    }
+
+    .Header-Link {
+        font-size: 14px;
+        line-height: 56px;
     }
 
     .Header-Promo {
