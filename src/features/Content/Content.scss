@@ -1,11 +1,25 @@
 .Content {
-    padding: 40px;
     margin: 40px auto;
     max-width: 1360px;
-    height: 250px;
 
     box-sizing: border-box;
 
-    border: 1px solid #e1e3ea;
-    border-radius: 5px;
+    &_withBorder {
+        padding: 40px;
+
+        border: 1px solid #e1e3ea;
+        border-radius: 5px;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .Content {
+        padding: 0 40px;
+    }
+}
+
+@media screen and (max-width: 455px) {
+    .Content {
+        padding: 0 20px;
+    }
 }

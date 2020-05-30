@@ -1,20 +1,20 @@
 const path = require('path');
 
 module.exports = {
-    entry: "./src/App.jsx",
+    entry: './src/App.jsx',
 
     bail: true,
 
     output: {
         path: path.resolve(__dirname, './dist'),
         publicPath: '/dist/',
-        libraryExport: "default",
-        filename: "bundle.js"
+        libraryExport: 'default',
+        filename: 'bundle.js',
     },
 
     resolve: {
         modules: ['node_modules'],
-        extensions: ['.js', '.jsx', '.json']
+        extensions: ['.js', '.jsx', '.json'],
     },
 
     module: {
@@ -22,10 +22,10 @@ module.exports = {
             {
                 test: /\.jsx?$/,
                 exclude: /(node_modules)/,
-                loader: "babel-loader",
+                loader: 'babel-loader',
                 options: {
-                    presets: ["@babel/preset-env", "@babel/preset-react"]
-                }
+                    presets: ['@babel/preset-env', '@babel/preset-react'],
+                },
             },
             {
                 test: /\.s[ac]ss$/i,
@@ -34,11 +34,14 @@ module.exports = {
                     {
                         loader: 'css-loader',
                         options: {
-                            url: true
-                        }
+                            url: true,
+                        },
                     },
-                    'sass-loader'
-                ]
+                    {
+                        loader: 'postcss-loader',
+                    },
+                    'sass-loader',
+                ],
             },
             {
                 test: /\.(png|jpe?g|svg)$/i,
@@ -46,11 +49,11 @@ module.exports = {
                     {
                         loader: 'file-loader',
                         query: {
-                            name: 'static/media/[name].[hash:8].[ext]'
-                        }
+                            name: 'static/media/[name].[hash:8].[ext]',
+                        },
                     },
                 ],
             },
-        ]
+        ],
     },
-}
+};

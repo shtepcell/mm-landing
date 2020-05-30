@@ -1,0 +1,33 @@
+.Title {
+    display: block;
+
+    &_level_1 {
+        padding: 8px 0 32px;
+
+        font-size: 36px;
+        font-weight: 600;
+    }
+
+    &_level_2 {
+        padding: 4px 0 32px;
+
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .Title {
+        &_level_1 {
+            padding: 0 0 20px;
+
+            font-size: 24px;
+            font-weight: 600;
+        }
+
+        &_level_2 {
+            padding: 0 0 18px;
+
+            font-size: 18px;
+        }
+    }
+}

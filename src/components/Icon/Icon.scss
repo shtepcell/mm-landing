@@ -8,7 +8,31 @@
 
     &_type {
         &_logo {
-            background-image: url('assets/logo.svg');
+            background-image: url('assets/logo.png');
+        }
+
+        &_24 {
+            background-image: url('assets/24.png');
+        }
+
+        &_arrow {
+            background-image: url('assets/arrow.png');
+        }
+
+        &_clock {
+            background-image: url('assets/clock.png');
+        }
+
+        &_free {
+            background-image: url('assets/free.png');
+        }
+
+        &_time {
+            background-image: url('assets/time.png');
+        }
+
+        &_pause {
+            background-image: url('assets/pause.png');
         }
     }
 }
