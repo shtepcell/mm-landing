@@ -1,0 +1,20 @@
+.Price {
+    display: flex;
+
+    height: 40px;
+
+    &-Cost {
+        font-size: 40px;
+
+        margin-right: 4px;
+    }
+
+    &-Postfix {
+        font-size: 14px;
+        display: flex;
+
+        align-self: flex-end;
+        flex-direction: column;
+    }
+
+}

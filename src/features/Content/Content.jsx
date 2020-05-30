@@ -5,8 +5,8 @@ import './Content.scss';
 
 const cnContent = cn('Content');
 
-export const Content = React.memo(() => (
-    <div className={cnContent()}>
-        Content
+export const Content = React.memo(({ children, withBorder }) => (
+    <div className={cnContent({ withBorder })}>
+        {children}
     </div>
 ));

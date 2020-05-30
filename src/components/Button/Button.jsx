@@ -6,18 +6,18 @@ import './Button.scss';
 const cnButton = cn('Button');
 
 export const Button = React.memo((props) => {
-    const { type, url, view, children, className } = props;
+    const { type, url, view, size, children, className } = props;
 
     if (type === 'link') {
         return (
-            <a className={cnButton({ type, view }, [className])} href={url}>
+            <a className={cnButton({ type, view, size }, [className])} href={url}>
                 {children}
             </a>
         );
     }
 
     return (
-        <button className={cnButton({ type, view }, [className])} type="button">
+        <button className={cnButton({ type, view, size }, [className])} type="button">
             {children}
         </button>
     );
