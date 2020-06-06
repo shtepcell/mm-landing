@@ -9,6 +9,7 @@ import { Footer } from './features/Footer';
 import { InternetPage } from './features/InternetPage';
 import { IptvPage } from './features/IptvPage';
 import { AboutPage } from './features/AboutPage';
+import { MorePage } from './features/MorePage';
 
 import './App.scss';
 
@@ -37,6 +38,11 @@ ReactDOM.render(
                 <Route path="/about">
                     <Content>
                         <AboutPage />
+                    </Content>
+                </Route>
+                <Route path="/more">
+                    <Content>
+                        <MorePage />
                     </Content>
                 </Route>
                 <Route path="*">

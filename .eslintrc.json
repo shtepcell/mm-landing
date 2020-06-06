@@ -21,6 +21,8 @@
             }
         ],
         "react/prop-types": "off",
+        "react/no-array-index-key": "off",
+
         "react/jsx-indent-props": ["error", 4],
         "arrow-parens": "off",
         "react/jsx-props-no-spreading": "off",
