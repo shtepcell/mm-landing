@@ -8,6 +8,7 @@ import { Content } from './features/Content';
 import { Footer } from './features/Footer';
 import { InternetPage } from './features/InternetPage';
 import { IptvPage } from './features/IptvPage';
+import { AboutPage } from './features/AboutPage';
 
 import './App.scss';
 
@@ -31,6 +32,11 @@ ReactDOM.render(
                 <Route path="/iptv">
                     <Content>
                         <IptvPage />
+                    </Content>
+                </Route>
+                <Route path="/about">
+                    <Content>
+                        <AboutPage />
                     </Content>
                 </Route>
                 <Route path="*">
