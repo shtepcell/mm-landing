@@ -2,6 +2,7 @@
     display: inline-block;
     background-size: contain;
     background-repeat: no-repeat;
+    background-position: center;
 
     height: 16px;
     width: 16px;
@@ -33,6 +34,46 @@
 
         &_pause {
             background-image: url('assets/pause.png');
+        }
+
+        &_home {
+            background-image: url('assets/home.png');
+        }
+
+        &_like {
+            background-image: url('assets/like.png');
+        }
+
+        &_pult_white {
+            background-image: url('assets/pult_white.png');
+        }
+
+        &_pult {
+            background-image: url('assets/pult.png');
+        }
+
+        &_star {
+            background-image: url('assets/star.png');
+        }
+
+        &_tv_new {
+            background-image: url('assets/tv_new.png');
+        }
+
+        &_tv_old {
+            background-image: url('assets/tv_old.png');
+        }
+
+        &_car {
+            background-image: url('assets/car.png');
+        }
+
+        &_aircraft {
+            background-image: url('assets/aircraft.png');
+        }
+
+        &_rocket {
+            background-image: url('assets/rocket.png');
         }
     }
 }

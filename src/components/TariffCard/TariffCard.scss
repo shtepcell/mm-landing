@@ -1,6 +1,10 @@
 $greenColor: #84AC54;
-$redColor: #D25842;
-$blueColor: #75BAF9;
+$orangeColor: #D25842;
+$redColor: #E61E5C;
+$purpuleColor: #426393;
+$lightGreenColor: #3FBE90;
+$mintColor: #5AC1CF;
+$mintGreenColor: #62D2BF;
 
 .TariffCard {
     display: flex;
@@ -30,7 +34,20 @@ $blueColor: #75BAF9;
                 color: $greenColor;
             }
         }
+
         &_red {
+            background-color: $orangeColor;
+
+            .TariffCard-Title {
+                color: $orangeColor;
+            }
+
+            .TariffCard-Button.Button:hover {
+                color: $orangeColor;
+            }
+        }
+
+        &_blue {
             background-color: $redColor;
 
             .TariffCard-Title {
@@ -41,15 +58,52 @@ $blueColor: #75BAF9;
                 color: $redColor;
             }
         }
-        &_blue {
-            background-color: $blueColor;
+
+        &_purpule {
+            background-color: $purpuleColor;
 
             .TariffCard-Title {
-                color: $blueColor;
+                color: $purpuleColor;
             }
 
             .TariffCard-Button.Button:hover {
-                color: $blueColor;
+                color: $purpuleColor;
+            }
+        }
+
+        &_darkBlue {
+            background-color: $lightGreenColor;
+
+            .TariffCard-Title {
+                color: $lightGreenColor;
+            }
+
+            .TariffCard-Button.Button:hover {
+                color: $lightGreenColor;
+            }
+        }
+
+        &_mint {
+            background-color: $mintColor;
+
+            .TariffCard-Title {
+                color: $mintColor;
+            }
+
+            .TariffCard-Button.Button:hover {
+                color: $mintColor;
+            }
+        }
+
+        &_mintGreen {
+            background-color: $mintGreenColor;
+
+            .TariffCard-Title {
+                color: $mintGreenColor;
+            }
+
+            .TariffCard-Button.Button:hover {
+                color: $mintGreenColor;
             }
         }
     }
@@ -92,6 +146,7 @@ $blueColor: #75BAF9;
 
     &-Logo {
         height: 100px;
+        width: 75px;
 
         margin-bottom: 18px;
 
@@ -102,17 +157,14 @@ $blueColor: #75BAF9;
         &_type {
             &_car {
                 width: 130px;
-                background-image: url('./assets/car.png');
             }
 
             &_aircraft {
                 width: 90px;
-                background-image: url('./assets/aircraft.png');
             }
 
             &_rocket {
                 width: 100px;
-                background-image: url('./assets/rocket.png');
             }
         }
     }
