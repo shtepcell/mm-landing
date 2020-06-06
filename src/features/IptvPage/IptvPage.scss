@@ -1,0 +1,100 @@
+.IptvPage {
+    padding: 0;
+
+    &-Tariffs {
+        display: flex;
+
+        flex-wrap: wrap;
+    }
+
+    &-TariffCard {
+        flex: 1 1 255px;
+        margin-bottom: 24px;
+    }
+
+    & .TariffCard-Name {
+        font-size: 24px;
+    }
+
+
+    & .TariffCard-Desc {
+        font-size: 18px;
+        opacity: 1;
+    }
+
+    &-TariffCard:not(:last-child) {
+        margin-right: 18px;
+    }
+
+    &-Cards {
+        display: flex;
+
+        justify-content: space-between;
+    }
+
+    &-Card {
+        flex: 1 0 100px;
+    }
+
+    &-Card:not(:last-child) {
+        margin-right: 8px;
+    }
+}
+
+@media screen and (max-width: 1360px) {
+    .IptvPage {
+        &-Card {
+            padding: 24px 12px;
+            margin-bottom: 12px;
+            width: 155px;
+
+            &-Icon {
+                width: 35px;
+                height: 35px;
+            }
+        }
+
+        &-Cards {
+            justify-content: start;
+            flex-wrap: wrap;
+        }
+
+    }
+}
+
+@media screen and (max-width: 795px) {
+    .IptvPage {
+        &-TariffCard {
+            width: 100%;
+            margin-right: 0;
+        }
+
+        &-Card {
+            padding: 24px 12px;
+            margin-bottom: 12px;
+            width: 155px;
+        }
+
+        &-Cards {
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        &-Card.Card {
+            margin-right: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 455px) {
+    .IptvPage {
+        &-Card {
+            width: 100%;
+            max-width: unset;
+        }
+
+        &-Cards {
+            justify-content: center;
+        }
+    }
+}

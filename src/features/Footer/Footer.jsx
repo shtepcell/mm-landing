@@ -16,8 +16,8 @@ export const Footer = React.memo(() => (
         </div>
         <div className={cnFooter('LinkList')}>
             <Link className={cnFooter('Link', { main: true })} view="default">Услуги</Link>
-            <Link className={cnFooter('Link')} view="default">Интернет</Link>
-            <Link className={cnFooter('Link')} view="default">IPTV</Link>
+            <Link className={cnFooter('Link')} view="default" url="/internet">Интернет</Link>
+            <Link className={cnFooter('Link')} view="default" url="/iptv">IPTV</Link>
             <Link className={cnFooter('Link')} view="default">Дополнительные услуги</Link>
             <Link className={cnFooter('Link')} view="default">Оборудование</Link>
         </div>
