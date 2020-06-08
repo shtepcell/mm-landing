@@ -17,7 +17,7 @@ export const Header = React.memo(() => (
                 <Link className={cnHeader('Link')} url="/internet">Интернет</Link>
                 <Link className={cnHeader('Link')} url="/iptv">IPTV</Link>
                 <Link className={cnHeader('Link')} url="/more">Доп. услуги</Link>
-                <Link className={cnHeader('Link')}>Оборудование</Link>
+                <Link className={cnHeader('Link')} url="/devices">Оборудование</Link>
                 <Link className={cnHeader('Link')} url="/about">О нас</Link>
                 <Link className={cnHeader('Link')}>Документы</Link>
             </div>

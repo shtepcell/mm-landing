@@ -10,6 +10,7 @@ import { InternetPage } from './features/InternetPage';
 import { IptvPage } from './features/IptvPage';
 import { AboutPage } from './features/AboutPage';
 import { MorePage } from './features/MorePage';
+import { DevicesPage } from './features/DevicesPage';
 
 import './App.scss';
 
@@ -22,7 +23,7 @@ ReactDOM.render(
             <Switch>
                 <Route exact path="/">
                     <Content>
-                        main
+                        <InternetPage />
                     </Content>
                 </Route>
                 <Route path="/internet">
@@ -43,6 +44,11 @@ ReactDOM.render(
                 <Route path="/more">
                     <Content>
                         <MorePage />
+                    </Content>
+                </Route>
+                <Route path="/devices">
+                    <Content>
+                        <DevicesPage />
                     </Content>
                 </Route>
                 <Route path="*">

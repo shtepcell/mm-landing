@@ -1,0 +1,91 @@
+.DevicesPage {
+    &-List {
+        border: 1px solid #e1e3ea;
+        border-radius: 5px;
+
+        max-width: 1000px;
+    }
+
+    &-Item {
+        position: relative;
+        display: flex;
+
+        padding: 24px 32px;
+
+        &:not(:last-child) {
+            border-bottom: 1px solid #e1e3ea;
+
+        }
+    }
+
+    &-Name {
+        margin-bottom: 20px;
+
+        font-weight: 600;
+        font-size: 24px;
+    }
+
+    &-Description {
+        margin-bottom: 20px;
+
+        font-size: 18px;
+        line-height: 24px;
+        white-space: pre-line;
+
+        opacity: .8;
+    }
+
+    &-Button {
+        position: absolute;
+
+        bottom: 24px;
+        right: 32px;
+
+        width: 250px;
+    }
+
+    &-Photo {
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+
+        height: 220px;
+        width: 280px;
+
+        &_device {
+            &_av600 {
+                background-image: url('./assets/av600.jpg');
+            }
+
+            &_dir615 {
+                background-image: url('./assets/dir615.jpg');
+            }
+
+            &_dir822 {
+                height: 280px;
+                background-image: url('./assets/dir822.jpg');
+            }
+
+            &_dir825 {
+                height: 200px;
+                background-image: url('./assets/dir825.jpg');
+            }
+
+            &_eltex2017 {
+                background-image: url('./assets/eltex2017.jpg');
+            }
+
+            &_nv711 {
+                background-image: url('./assets/nv711.jpg');
+            }
+
+            &_nv711wac {
+                background-image: url('./assets/nv711wac.jpg');
+            }
+        }
+    }
+
+    &-ItemLeft {
+        padding-right: 24px;
+    }
+}
