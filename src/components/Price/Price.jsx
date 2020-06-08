@@ -6,7 +6,7 @@ import './Price.scss';
 const cnPrice = cn('Price');
 
 export const Price = React.memo((props) => {
-    const { price, className } = props;
+    const { price, isOnce, className } = props;
 
     return (
         <div className={cnPrice(null, [className])}>
@@ -15,7 +15,7 @@ export const Price = React.memo((props) => {
             </div>
             <div className={cnPrice('Postfix')}>
                 <div>руб.</div>
-                <div>мес.</div>
+                <div className={cnPrice('Month', { hide: isOnce })}>мес.</div>
             </div>
         </div>
     );
