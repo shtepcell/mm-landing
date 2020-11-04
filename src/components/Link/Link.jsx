@@ -6,8 +6,10 @@ import './Link.scss';
 const cnLink = cn('Link');
 
 export const Link = React.memo((props) => {
-    const { url, view, children, className } = props;
-    const href = url ? `#${url}` : undefined;
+    const { url, view, children, className, external, target, size } = props;
+    let href = url ? `#${url}` : undefined;
+
+    href && external && (href = url);
 
     // const onClick = useCallback(() => {
     //     if (url) {
@@ -16,7 +18,7 @@ export const Link = React.memo((props) => {
     // }, [url]);
 
     return (
-        <a className={cnLink({ view }, [className])} href={href}>
+        <a className={cnLink({ view, size }, [className])} href={href} target={target}>
             {children}
         </a>
     );

@@ -9,10 +9,22 @@
     text-decoration: none;
 
     &_view_default {
-
         &:hover {
             color: #1b6fb7;
             text-decoration: underline;
         }
+    }
+
+    &_view_blue {
+        color: #1b6fb7;
+
+        &:hover {
+            color: #f00;
+            text-decoration: none;
+        }
+    }
+
+    &_size_l {
+        font-size: 20px;
     }
 }

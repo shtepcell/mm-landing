@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { cn } from '@bem-react/classname';
 
 import { Title } from '../../components/Title';
+import { Link } from '../../components/Link';
 
 import './AboutPage.scss';
 
@@ -35,6 +36,17 @@ export const AboutPage = React.memo(() => {
                     прийти к вам на помощь. «Мой домашний интернет» - надежный поставщик
                     телекоммуникационных услуг как для бизнеса, так и для дома! И мы готовы к
                     сотрудничеству с Вами!
+                </div>
+                <div style={{ margin: "24px 0" }}>
+                    <Link
+                        size="l"
+                        view="blue"
+                        url="/static/user_agreement.docx"
+                        target="_blank"
+                        external
+                    >
+                        Политика конфиденциальности
+                    </Link>
                 </div>
             </div>
         </div>
