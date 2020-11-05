@@ -41,7 +41,7 @@ export const AboutPage = React.memo(() => {
                     <Link
                         size="l"
                         view="blue"
-                        url="/static/user_agreement.docx"
+                        url="/static/user_agreement.pdf"
                         target="_blank"
                         external
                     >
